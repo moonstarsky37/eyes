@@ -117,6 +117,8 @@
 </li>
       <li><a href="sources/api/data.html#eyes.data.ptt.PttPost.comments">comments (eyes.data.ptt.PttPost attribute)</a>
 </li>
+      <li><a href="sources/api/celery.html#eyes.celery.stats.tasks.StatsTask.config">config (eyes.celery.stats.tasks.StatsTask property)</a>
+</li>
       <li><a href="sources/api/schema.html#eyes.schema.EntitySummary.connection">connection (eyes.schema.EntitySummary attribute)</a>
 
       <ul>
@@ -249,6 +251,8 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="sources/api/data.html#eyes.data.Entity">Entity (class in eyes.data)</a>
 </li>
+      <li><a href="sources/api/job.html#eyes.job.Jobs.entity_monthly_summary">entity_monthly_summary() (eyes.job.Jobs method)</a>
+</li>
       <li><a href="sources/api/data.html#eyes.data.stats.EntitySummary">EntitySummary (class in eyes.data.stats)</a>
 
       <ul>
@@ -336,6 +340,8 @@
         <li><a href="sources/api/data.html#module-eyes.data.dcard">module</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     eyes.data.ptt
 
@@ -343,8 +349,6 @@
         <li><a href="sources/api/data.html#module-eyes.data.ptt">module</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     eyes.data.spacy
 
@@ -626,7 +630,11 @@
       <li><a href="sources/api/data.html#eyes.data.Post">Post (class in eyes.data)</a>
 </li>
       <li><a href="sources/api/data.html#eyes.data.ptt.PttComment.post_id">post_id (eyes.data.ptt.PttComment attribute)</a>
+
+      <ul>
+        <li><a href="sources/api/db.html#eyes.db.ptt.PttPost.post_id">(eyes.db.ptt.PttPost attribute)</a>
 </li>
+      </ul></li>
       <li><a href="sources/api/exception.html#eyes.exception.PostNotExistsError">PostNotExistsError</a>
 </li>
       <li><a href="sources/api/job.html#eyes.job.Jobs.ptt_monthly_summary">ptt_monthly_summary() (eyes.job.Jobs method)</a>
@@ -683,11 +691,15 @@
 </li>
       <li><a href="sources/api/schema.html#eyes.schema.Query.resolve_entity_summary">resolve_entity_summary() (eyes.schema.Query method)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="sources/api/schema.html#eyes.schema.Query.resolve_monthly_summaries">resolve_monthly_summaries() (eyes.schema.Query method)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="sources/api/schema.html#eyes.schema.Query.resolve_monthly_summary">resolve_monthly_summary() (eyes.schema.Query method)</a>
+</li>
+      <li><a href="sources/api/schema.html#eyes.schema.Query.resolve_ptt_post">resolve_ptt_post() (eyes.schema.Query method)</a>
+</li>
+      <li><a href="sources/api/schema.html#eyes.schema.Query.resolve_ptt_posts">resolve_ptt_posts() (eyes.schema.Query method)</a>
 </li>
       <li><a href="sources/api/config.html#eyes.config.CeleryConfig.result_backend">result_backend (eyes.config.CeleryConfig attribute)</a>
 </li>
@@ -887,7 +899,7 @@
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2021, Sean Chang.
+      &copy;2022, Sean Chang.
       
       |
       Powered by <a href="http://sphinx-doc.org/">Sphinx 4.1.2</a>
